@@ -1,9 +1,9 @@
 %EXEMPLO 1: MAGOS DO MAL
-%OBJETIVO
+%OBJETIVOS
 necromante(X) :- invoca_espiritos(X), reside_em_lugares_sombrios(X), \+ queima(X).
 bruxa(X) :- possui_magia_proibida(X), reside_em_lugares_sombrios(X), queima(X).
 
-%PREDICADOS
+%REGRAS
 %X invoca_espiritos se possui_magia_proibida.
 invoca_espiritos(X) :- possui_magia_proibida(X).
 
